@@ -13,8 +13,8 @@
 </head>
 <body>
 
-<header  class="container-fluid" id="">
-    <nav class="navbar navbar-expand-lg" style="background-color:#ffb8b1; color: white;">
+<header  class="container-fluid sticky-top" id="" style="padding: 0;  ">
+    <nav class="navbar navbar-expand-lg " style="background-color:#F7C5CC; ">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <img src="/images/logo.png" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
@@ -43,34 +43,37 @@
                 <a class="nav-link" href="#">Projects</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Testimonials</a>
+                <a class="nav-link" href="#testimonials">Testimonials</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
 </header>
-<main class="container-fluid" >
-    <section id="landing">
-      <div class="container text-center">
-        <div class="row align-items-end">
-          <div class="col" style="transform: translateY(15%);">
+<main class="container-fluid " >
+    <section id="landing  style="height: 100vh;">
+      <div class="container text-center ">
+            <div class="row align-items-end ">
+              <div class="col my-auto">
 
-            <h4 data-text="Hello, I'm">Hello, I'm</h4>
-            <h1 style="color: #993441;">Siyamanga</h1>
-            <h3>An Aspiring full stack web-developer</h3>
-            <a href=""> Connect with me</a>
-          </div>
+                <div class="container2">
+                 <h4  class="text2">Hello, I'm</h4>
+                 <h1 style="color:#993441">Siyamanga</h1>
+                 <h3>An Aspiring full stack web-developer</h3>
+                 <a href="#contact"> Connect with me</a>
+                </div> 
+                </div>
 
-          <div class="col">
+              
+            <div class="col ">
 
-            <img src="./images/LANDING.png " style="height: 350px; transform: translateY(15%);">
-          </div>
+                <img src="./images/LANDING.png " width="350" height="450" >
+            </div>
+            </div>
           
-        </div>
       </div>
       
 
@@ -79,22 +82,26 @@
     </section ><br><br><br><br>
     
 
-    <section id="About" class="About">
+    <section id="About" class="About" style="margin-bottom: 20%;">
      <div class="ABM">
-      <img src="./images/bio.JPG" style="height: 500px; width: 400px;">
+      <img src="./images/bio.JPG" style="height: 500px; width: 400px; border-radius: 5em;">
       <div class="textAB">
         <h1>ABOUT ME</h1>
         <h5>Aspiring full stack developer</h5>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat accusantium, porro neque assumenda odit reiciendis optio provident aliquam! Voluptatem asperiores dolores exercitationem eveniet? Molestiae quae nostrum voluptatem dolorem vitae esse?</p>
+        <p>A proactive Full stack developer student at Life Choices Academy with strong leadership skills and
+            volunteering experience. Possess Public Speaking skills under Department of Water and Sanitation
+            (DWS) and former Constitution Review Committee at Metanoia Residence in Stellenbosch. In
+            addition, I am an attentive, intuitive, and flexible learner. I excel in teams while showcasing my
+            individuality.</p>
         <button> Let's Connect</button>
-        <button> Download CV</button>
+        <a href="/files/zweni S CV.pdf"><button type="submit"> Download CV</button></a>
       </div>
      </div>
     </section >
    
-    <section id="Education" class="bedy">
+    <section id="Education" class="bedy" style="margin-bottom: 20%;">
       <div cass="top-part" style="text-align: center; font-size: 3em;">
-        <h1>Education & Skills</h1>
+        <h1>Education & work</h1>
       </div>
   
       <div class="timeline">
@@ -125,19 +132,124 @@
       </div>
     </div>
     </section>
-    <section>
+    <section id="skills" class="m-0 p-0 ">
+        <div class="container text-center" style="height: 100vh;">
+            <div class="row">
+              <div class="col align-self-start">
+                <img src="./images/html-lohgo.png" style="height: 200px; width: 200px;">
+              </div>
+              <div class="col align-self-center">
+                <img src="./images/CSS-Logo.png" style="height: 200px; width: 200px;">
+              </div>
+              <div class="col align-self-end">
+               <img src="./images/bootstrap-logo.png" style="height: 200px; width: 200px;">
+              </div>
+            </div>
+          </div>
      
 
     </section>
-    <section>
+
+    <section id="project" style="margin-bottom: 20%;">
 
     </section>
-    <section>
+    <section id="testimonials" style="margin-bottom: 20%;">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+              <div class="card"style="width: 500px; height: 550px;">
+                <img src="./images/C11 Uzukhanye Dywili (4).JPG" class="card-img-top" alt="..."style="height: 300px; width: 500px;">
+                <div class="card-body">
+                  <h5 class="card-title">Uzukhanye Dywili <br> Assistant Lecture</h5>
+                  <p class="card-text">Working with Siyamanga was an incredible experience. Their professionalism, attention to detail, and communication skills made the entire process seamless. They consistently exceeded my expectations and delivered exceptional results. I would highly recommend Siyamanga to anyone looking for a talented and dedicated professional.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card" style="width: 500px; height: 550px;;">
+                <img src="./images/kgodishoface.jpg" class="card-img-top" alt="..." style="height: 300px; width: 500px;">
+                <div class="card-body">
+                  <h5 class="card-title">Kgodisho Lebopa <br> collegue
+                </h5>
+                  <p class="card-text">Siyamanga is an exceptional learner with a keen eye for detail, but she is also an excellent team player who always goes above and beyond to support her fellow students. Her determination, positive attitude, strong communication skills, and willingness to collaborate has made her a valuable asset to any project team. I have no doubt that she will continue to excel in her career and make meaningful contributions to the field of technology..</p>
+                </div>
+              </div>
+            </div>
+       <br><br>
+            <div class="col">
+              <div class="card" style="width: 500px; height: 550;">
+                <img src="./images/C12 C2 Nuraan Samsodien  (1).JPG" class="card-img-top" alt="..."style="height: 300px; width: 500px;">
+                <div class="card-body">
+                  <h5 class="card-title">Nuraan Samsodien <br> collegue</h5>
+                  <p class="card-text">Siyamanga is a highly thought intellectual from my perspective. She is brilliant, passionate, ambitious, and extremely hardworking, she always does her utmost best when it comes to her work. She always makes sure that she understands the work and if not she communicates to ask for guidance. She is incredibly motivated and has great communication and leadership skills. Any company would be lucky to have her on their team.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card"style="width: 500px; height: 550;">
+                <img src="./images/C12 Laiquah Cotie (2).JPG" class="card-img-top" alt="..."style="height: 300px; width: 500px;">
+                <div class="card-body">
+                  <h5 class="card-title">laiquah cotie <br> collegue
+                </h5>
+                  <p class="card-text"> Working with Siyamanga was an incredible experience. Her professionalism, attention to detail, and communication skills made the entire process seamless. She consistently exceeded my expectations and delivered exceptional results. I would highly recommend Siyamanga to anyone looking for a talented and dedicated professional.
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          
+            <div class="col">
+                <div class="card"style="width: 500px; height: 550;">
+                  <img src="./images/C12 Aphelele Joyi (1).JPG" class="card-img-top" alt="..."style="height: 300px; width: 500px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Aphelele Joyi <br> collegue</h5>
+                    <p class="card-text"> Siyamanga is dedicated, hard working and a team player. She works well with her peers and performs well on her projects.She has a good understanding of web development and would be a valuable addition to any team that is lucky enough to haveher.
+  
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+    </section>
+    <section id="contact">
+        <h1> Contact Me Here</h1>
+        <div class="container">
+            <form action="https://formspree.io/f/xoqzbazw" method="post">
+          
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          
+              <label for="province">Province</label>
+              <select id="province" name="province">
+                <option value="Western Cape">Western Cape</option>
+                <option value="Eastern Cape">Eastern Cape</option>
+                <option value="Johannesburg">Johannesburg</option>
+                <option value="Free State">Free State</option>
+                <option value="Northen Cape">Northen Cape</option>
+              </select>
+          
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+          
+              <input type="submit" value="Submit">
+          
+            </form>
+          </div>
 
     </section>
 </main>
 <footer class="container-fluid"> 
-ghruc
+    <footer>
+        <div class="footer">
+            <p class="m-0">Copyright &copy; 2023</p>
+            <ul class="m-0">
+              <li class="list-inline-item"><a  href="https://www.linkedin.com/in/siyamanga-zweni-20099b1aa/" class="btn-floating btn-sm text-white" style="font-size:20px"><i class="fab fa-linkedin-in"  ></i></a></li>
+              <li class="list-inline-item"><a  href="https://github.com/siyamanga22" class="btn-floating btn-sm text-white" style="font-size:20px"><i class="fab fa-github"  ></i></a></li>
+            </ul>
+        </div>
+      </footer>
 </footer>
 
     
