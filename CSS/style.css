@@ -6,20 +6,29 @@
 header{
     background-color: black;
 }
-.container2{
-    display: inline-block;
+body{
+    background-color:#cccccc;
+}
+
+/* navigation styling */
+.nav-item a{
+    color: #8F00FF;
+    font-weight: bold;
+}
+.nav-item a :hover{
+    background-color: black;
 
 }
 
 
 .col{
-    color:black;
+    color:#8F00FF;
 }
 .col h4{
-    color:black;
+    color:#8F00FF;
     font-size:4em;
     text-transform: uppercase;
-    line-height: normal;
+    /* line-height: normal; */
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -37,11 +46,11 @@ header{
     }
 }
 .col h1{
-    color: #993441;
+    color: #8F00FF;
     font-size: 80px;
 }
 .col h3{
-    color:black;
+    color:#8F00FF;
     font-size:30px;
 
 }
@@ -50,14 +59,31 @@ header{
     padding: 8px 18px;
     text-decoration: none;
     color:black;
-    background-color: orangered;
+    background-color: #cccccc;
 }
 .col a :hover{
+    background-color:#8F00FF;
+  }
+  /* landing section */
+.container2{
+    display: inline-block;
+
+}
+.container2 a{
+    font-weight: bold;
+    color: #8F00FF!important;
+    border:2px solid;
+    border-radius: 3rem;
+}
+
+.container2 a:hover{
+    background-color:#8F00FF;
+    color: black!important;
     
 }
-body{
-    background-color:#c4a381;
-}
+    
+
+
 
 /* about */
 .About{
@@ -84,77 +110,99 @@ button{
     transition :4s;
     padding:13px 30px;
 }
-.timeline ::before{
-content:'';
-position: absolute;
-top:0;
-left: 0;
-width: 100%;
-height: 100%;
-z-index: -1;
-position: fixed;
-}
-.timeline{
-    margin: 5em auto;
-    max-width: 34.15em;
 
-}
-.checkpoint{
-    max-width: 34em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-}
-.checkpoint{
-    border: 2px solid black;
-    border-radius: 1em;
-    padding: 1.5em;
-}
-.checkpoint h2{
-    font-size: 20px;
-}
-.checkpoint p{
-    line-height: 27px;
-}
-.checkpoint:nth-child(odd){
-    border-left: 4px solid black;
-    padding-left:3em;
-    transform: translateX(17em);
 
+#Education{
+    .row{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+    .column header.title{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: blue;
+        padding: 0px 0px 20px 30px;
+    }
+    .column .contents{
+        padding: 0px 30px;
+        border-left: 2px solid #BABABA;
+    }
+    .column .contents .box{
+        position: relative;
+        padding: 20px;
+        border: 1px solid #EAEAEA;
+        background-color: #FFFFFF;
+        cursor: pointer;
+        transition: all 0.4s;
+        margin-bottom: 20px;
+    }
+    .column .contents .box:hover{
+        box-shadow: 0px 3px 12px 0px #ccc;
+        border: 1px solid transparent;
+    }
+    .column .contents .box::before{
+        content: '';
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        right: calc(100% + 22px);
+        top: 0;
+        background-color: #8F00FF;
+        border: 2px solid white;
+    }
+    .box h4{
+        position: relative;
+        color: #8F00FF;
+    }
+    .box h3{
+        font-size: 19px;
+        padding: 10px 0px 6px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #444;
+    }
+    .box p{
+        line-height: 1.2;
+        color: #666;
+        font-size: 17px;} 
+    
 }
-.checkpoint:nth-child(even){
-    border-right: 3px solid black;
-    padding-right: 3em;
-    transform: translateX(-17em);
+@media screen and (max-width:650px){
+    #Education .row{
+            display: inline-block;
+    }
+    
 }
-/* carousel */
-/* .carousel-item{
-    height: 100vh;
-    min-height: 300px;
-    -webkit-background-size: cover;
-    background: no-repeat scroll center scroll;
-    background-size: cover;
-}
-.carousel-item ::before{
-    content:'';
-    display: block;
-    position: absolute;
-    top:0;
-    left:0;
-    bottom: 0;
-    right:0;
-    background:black;
-    opacity:0.5;
 
+/* styling project section */
+#project{
+    scroll-margin: 110px;
+    height: fit-content;
+    padding: 2rem 2rem 3rem;
+    
 }
-.carousel-caption{
-    bottom:180px;
-    padding-left: 100px;
-    padding-right: 100px;
+.carousel-item{
+    height: 500px;
+
 }
 .carousel-caption h5{
-    font-size:18px;
-    
-} */
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom:50% ; 
+}
+.carousel-caption a{
+    margin-bottom:50% ; 
+    border: 2px solid;
+    text-decoration: none;
+    padding: 8px 16px;
+    color: black;
+   border-radius: 2rem;
+   font-weight: bold ;
+
+}
+
+/* contact form */
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -188,6 +236,7 @@ input[type=text], select, textarea {
     /* background-color: #f2f2f2; */
     padding: 20px;
   }
+  /* footer */
   footer{
     /* position: fixed; */
     bottom: 0;
@@ -195,9 +244,12 @@ input[type=text], select, textarea {
     text-align: center;
     background-color: grey;
 }
+
+/* ADDING BACKGROUND FOR SECTIONS */
 #contact,#testimonials,#skills,#Education,#About,#landing{
+    scroll-margin: 110px;
     margin: 1rem;
-    background-color: antiquewhite;
+    background-color: #EEEEEE;
     border-radius: 5px;
     height: fit-content;
 }
