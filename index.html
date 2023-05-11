@@ -40,7 +40,7 @@
                 <a class="nav-link" href="#skills">skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#project">Projects</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#testimonials">Testimonials</a>
@@ -54,7 +54,7 @@
       </nav>
 </header>
 <main class="container-fluid " >
-    <section id="landing  style="height: 100vh;">
+    <section id="landing" >
       <div class="container text-center ">
             <div class="row align-items-end ">
               <div class="col my-auto">
@@ -79,12 +79,12 @@
 
       
         
-    </section ><br><br><br><br>
+    </section >
     
 
-    <section id="About" class="About" style="margin-bottom: 20%;">
+    <section id="About" class="About" >
      <div class="ABM">
-      <img src="./images/bio.JPG" style="height: 500px; width: 400px; border-radius: 5em;">
+      <img src="./images/bio.JPG">
       <div class="textAB">
         <h1>ABOUT ME</h1>
         <h5>Aspiring full stack developer</h5>
@@ -99,41 +99,40 @@
      </div>
     </section >
    
-    <section id="Education" class="bedy" style="margin-bottom: 20%;">
+    <section id="Education" class="bedy" >
       <div cass="top-part" style="text-align: center; font-size: 3em;">
         <h1>Education & work</h1>
       </div>
   
       <div class="timeline">
-      <div class="checkpoint">
-        <h2> 2022: Life Choices Academy</h2>
-        <h4>Coding</h4>
-        <p>Currently enrolled for a Coding course, Full-Stack Developer.</p>
-      </div><br><br>
+        <div class="checkpoint">
+          <h2> 2022: Life Choices Academy</h2>
+          <h4>Coding</h4>
+          <p>Currently enrolled for a Coding course, Full-Stack Developer.</p>
+        </div><br><br>
+        
+        <div class="checkpoint">
+          <h2> 2022:  University of Johannesburg</h2>
+          <p>Completed second year of Bcom Accounting Degree</p>
+        </div><br><br>
+        
+        <div class="checkpoint">
+          <h2>2021: Lingomso Caters</h2>
+          <p>Worked at Lingomso Caterers as a waitress and a runner</p>
+        </div><br><br>
   
-      <div class="checkpoint">
-        <h2> 2022:  University of Johannesburg</h2>
-        <p>Completed second year of Bcom Accounting Degree</p>
-      </div><br><br>
-  
-      <div class="checkpoint">
-        <h2>2021: Lingomso Caters</h2>
-        <p>Worked at Lingomso Caterers as a waitress and a runner</p>
-      </div><br><br>
-  
-      <div class="checkpoint">
-        <h2> 2019-2020: Stellenbosch University</h2>
-        <p>Studied Engineering first year and Bachelor of Cormerse in Accounting first year</p>
-  
-      </div><br><br>
-      <div class="checkpoint">
-        <h2> 2014-2018 : High School</h2>
-        <p> Completed High School at Manzomthoombo Senior Secondary and obtained National Senior Certificate.</p>
+        <div class="checkpoint">
+          <h2> 2019-2020: Stellenbosch University</h2>
+          <p>Studied Engineering first year and Bachelor of Cormerse in Accounting first year</p>
+        </div><br><br>
+        <div class="checkpoint">
+          <h2> 2014-2018 : High School</h2>
+          <p> Completed High School at Manzomthoombo Senior Secondary and obtained National Senior Certificate.</p>
+        </div>
       </div>
-    </div>
     </section>
-    <section id="skills" class="m-0 p-0 ">
-        <div class="container text-center" style="height: 100vh;">
+    <section id="skills" >
+      <div class="container text-center" >
             <div class="row">
               <div class="col align-self-start">
                 <img src="./images/html-lohgo.png" style="height: 200px; width: 200px;">
@@ -145,15 +144,52 @@
                <img src="./images/bootstrap-logo.png" style="height: 200px; width: 200px;">
               </div>
             </div>
+       </div>
+     </section>
+
+    <section id="project" >
+
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Pictures/Portfolios.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
           </div>
-     
+          <div class="carousel-item">
+            <img src="./Pictures/luxury-hair-salon-logo-set_23-2148828814.avif" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./Pictures/download.kls.jfif" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div> 
 
     </section>
-
-    <section id="project" style="margin-bottom: 20%;">
-
-    </section>
-    <section id="testimonials" style="margin-bottom: 20%;">
+    <section id="testimonials" >
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
               <div class="card"style="width: 500px; height: 550px;">

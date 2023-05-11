@@ -53,9 +53,9 @@ header{
     background-color: orangered;
 }
 .col a :hover{
-    back
+    
 }
-main{
+body{
     background-color:#c4a381;
 }
 
@@ -81,7 +81,7 @@ button{
     font-weight: bold;
     border:2px solid transparent;
     border-radius: 30px;
-    transition 4s;
+    transition :4s;
     padding:13px 30px;
 }
 .timeline ::before{
@@ -126,7 +126,35 @@ position: fixed;
     padding-right: 3em;
     transform: translateX(-17em);
 }
+/* carousel */
+/* .carousel-item{
+    height: 100vh;
+    min-height: 300px;
+    -webkit-background-size: cover;
+    background: no-repeat scroll center scroll;
+    background-size: cover;
+}
+.carousel-item ::before{
+    content:'';
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom: 0;
+    right:0;
+    background:black;
+    opacity:0.5;
 
+}
+.carousel-caption{
+    bottom:180px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.carousel-caption h5{
+    font-size:18px;
+    
+} */
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -166,4 +194,15 @@ input[type=text], select, textarea {
     width: 100%;
     text-align: center;
     background-color: grey;
-}}
+}
+#contact,#testimonials,#skills,#Education,#About,#landing{
+    margin: 1rem;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    height: fit-content;
+}
+.ABM img{
+    width: 500px;
+    margin: .5rem;
+    clip-path: circle();
+}
