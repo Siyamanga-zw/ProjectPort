@@ -10,6 +10,7 @@ body{
     background-color:#cccccc;
 }
 
+
 /* navigation styling */
 .nav-item a{
     color: #8F00FF;
@@ -110,7 +111,18 @@ button{
     transition :4s;
     padding:13px 30px;
 }
-
+/* @media screen and (max-width:1180px) {
+    .About{
+        width: fit-content;
+    }
+    #landing{
+        width: fit-content;
+    }
+    #skills{
+        width: fit-content;
+    }
+    
+} */
 
 #Education{
     .row{
@@ -167,12 +179,7 @@ button{
         font-size: 17px;} 
     
 }
-@media screen and (max-width:650px){
-    #Education .row{
-            display: inline-block;
-    }
-    
-}
+
 
 /* styling project section */
 #project{
@@ -185,11 +192,13 @@ button{
     height: 500px;
 
 }
+.carousel-caption{
+    margin-bottom: 20%;
+}
 .carousel-caption h5{
     color: black;
     font-size: 3rem;
     font-weight: bold;
-    margin-bottom:50% ; 
 }
 .carousel-caption a{
     margin-bottom:50% ; 
@@ -201,6 +210,60 @@ button{
    font-weight: bold ;
 
 }
+/* styling testimonials */
+#testimonials{
+    display: grid;
+    height:100%;
+    place-items: center;
+    
+}
+.wrapper{
+    max-width: 1200px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content:space-between;
+    
+}
+ .wrapper .box{
+    background-color: #fff;
+    border-radius:3px;
+    padding:25px;
+    width:calc(33% - 10px);
+    flex-wrap: wrap;
+}
+
+i.quote{
+    font-size:18px;
+    color:#17a2b8;
+}
+.information{
+padding-top: 10px;
+align-items: ;
+display: flex;
+justify-content: space-between;
+}
+.Name{
+font-size:17px;
+font-weight: 500;
+}
+.description{
+    color:#17a2b8;
+    font-size: 16px;
+    font-weight: 400;
+    
+}
+.photos img{
+    height: 5em;
+    width: 5em;
+    object-fit:cover;
+    border-radius: 50%;
+    border: 2px solid #17a2b8;
+
+}
+
+
 
 /* contact form */
 /* Style inputs with type="text", select elements and textareas */
